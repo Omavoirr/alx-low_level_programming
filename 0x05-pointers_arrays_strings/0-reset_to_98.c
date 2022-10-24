@@ -1,22 +1,10 @@
-#ifndef MAIN_H
-#define MAIN_H
+#include "main.h"
 
 /**
- * prototypes files
- * import form here
+ * reset_to_98 -> a function to update the reference of a pointer
+ * @n: pointer to n to be updated
  */
-
-int _putchar (char c);
 void reset_to_98(int *n);
-void swap_int(int *a, int *b);
-int _strlen(char *s);
-void _puts(char *str);
-void print_rev(char *s);
-void rev_strings(char *s);
-void puts2(char *str);
-void puts_half(char *str);
-void print_array(int *a, int n);
-char *_stropy(char *dest, char *src);
-int _atol(char *s)
-
-#endif
+{
+	*n = 98;
+}
