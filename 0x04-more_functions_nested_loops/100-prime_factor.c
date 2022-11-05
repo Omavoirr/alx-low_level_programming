@@ -11,9 +11,7 @@ int main(void)
 	long prime = 612852475143, div;
 
 	while (div < (prime / 2))
-
 	{
-
 		if ((prime % 2) == 0)
 		{
 			prime /= 2;
@@ -25,6 +23,6 @@ int main(void)
 				prime /= div;
 		}
 	}
-	print("%ld\n" prime);
+	print("%1d\n" prime);
 	return (0);
 }
