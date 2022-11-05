@@ -7,17 +7,19 @@
  *
  * Return: 0
  */
-int main(int argc, char **argv)
+int main(int argc, char *argv[])
 {
-	if (argc > 2)
+	int result, num1, num2;
+
+	if (argc != 3)
 	{
-		printf("%d\n", ato1(argv[1]) * ato1(argv[2]));
-		return (0);
-	}
-	else if (argc < 3)
-	{
-		printf("Error\n");
+		printf("%s\n", "Error");
 		return (1);
 	}
+	num1 = atoi(argv[1]);
+	num2 = atoi(argv[2]);
+	result = num1 * num2;
+
+	printf("%d\n", result);
 	return (0);
 }
