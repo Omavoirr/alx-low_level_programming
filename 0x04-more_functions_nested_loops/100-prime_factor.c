@@ -1,14 +1,15 @@
 #include <stdio.h>
-#include <stdlib.h>
 
 /**
   * main - prints the largest prime number
   *
-  * Return: Always
+  * Return: Always 0
   */
 int main(void)
 {
-	long prime = 612852475143;
+	long int n, fp;
+
+	n = 612852475143;
 
 	for (fp = 2; fp <= n; fp++)
 	{
