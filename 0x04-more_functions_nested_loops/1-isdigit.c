@@ -3,8 +3,9 @@
 /**
  * _is digit - checks if a char is a dgit
  * @c: int to be checked
- * Return: 1 if v is a digit, 0 otherwise
+ * Return: 1 if c is a digit, 0 otherwise
  */
+
 int _isdigit(int c);
 {
 	int y = 0;
@@ -14,4 +15,3 @@ int _isdigit(int c);
 
 	return (y);
 }
-
