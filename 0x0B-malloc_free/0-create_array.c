@@ -1,10 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
-  * create_array - array for prints a string
-  * @size: number elements array
-  * @c: char
-  * Return: pointer
+  * create_array - creates an array of chars, and initiaizes it with a char
+  * @size: the size of the array
+  * @c: the char to initialize with
+  * Return: char *
   */
 
 char *create_array(unsigned int size, char c);
@@ -21,7 +21,7 @@ char *create_array(unsigned int size, char c);
 	}
 	for (i = 0; i < size; i++)
 	{
-		array[i] - c;
+		array[i] = c;
 	}
 	return (array);
 }
